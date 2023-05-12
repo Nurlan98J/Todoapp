@@ -89,6 +89,9 @@ h1>span:nth-child(9){
     }
 }
 
+
+
+
 .container{
     position: relative;
     border: solid #fff900;
@@ -102,6 +105,49 @@ h1>span:nth-child(9){
     height: 70vh;
     overflow: hidden scroll;
     border-radius: 5px;
+    animation: bblick 1s ease-in-out 3;
+}
+
+@keyframes bblick{
+    0%{
+        border: #484848;
+        box-shadow: none;
+
+
+    }
+    18%{
+        border: #484848;
+        box-shadow: none;
+
+    }
+    20%{
+        border: #fff900;
+        box-shadow: 0 0 10px #fff900, 0 0 20px #ff6c00;
+    }
+    30%{
+        border: #484848;
+        box-shadow: none;
+    }
+    35%{
+        border: #fff900;
+        box-shadow: 0 0 10px #fff900, 0 0 20px #ff6c00;
+    }
+    70%{
+        border: #484848;
+        box-shadow: none;
+    }
+    85%{
+        border: #fff900;
+        box-shadow: 0 0 10px #fff900, 0 0 20px #ff6c00;
+    }
+    90%{
+        border: #484848;
+        box-shadow: none;
+    }
+    100%{
+        border: #fff900;
+        box-shadow: 0 0 10px #fff900, 0 0 20px #ff6c00;
+    }
 }
 
 .container::-webkit-scrollbar{
@@ -119,7 +165,7 @@ form{
 }
 
 form > input{
-    max-width: 400px;
+    width: 400px;
     height: 50px;
     font-size: x-large;
     border-radius: 5px;
@@ -163,7 +209,7 @@ li > button:nth-child(3){
     color: #fdfdfd;
     background-color: rgb(238, 44, 14);
     box-shadow: 0 0 7px #da530a, 0 0 20px #f23703;
-    
+    animation: bblick 2s ease-in-out 2;
 }
 
 li > button:nth-child(2){
@@ -178,7 +224,7 @@ li > button:nth-child(2){
     color: #fdfdfd;
     background-color: rgb(39, 190, 22);
     box-shadow: 0 0 7px #28e62c, 0 0 20px #bcfa51;
-    
+    animation: bblick 1s ease-in-out 3;
 }
 
 li{
@@ -203,9 +249,10 @@ li{
    }
    form{
     max-width: 300px;
+    
    }
    form > input{
-    max-width: 200px;
+    max-width: 180px;
     height: 40px;
     font-size: large;
    }
