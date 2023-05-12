@@ -43,8 +43,8 @@ function renderTasks() {
     const li = document.createElement('li');
     li.innerHTML = `
       <span>${task}</span>
-      <button class="done">Done</button>
-      <button class="del">Del</button>
+      <button class="done"> <p>Done</p> </button>
+      <button class="del"><p>Del</p></button>
       <hr>
     `;
     const removeBtn = li.querySelector('.del');
